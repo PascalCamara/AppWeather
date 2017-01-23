@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="?attr/colorBackgroundFloating"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="4dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Mercredi 12 janvier 2017"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/UIDateDetail"
+                android:textSize="18sp" />
+
+            <TextView
+                android:text="Paris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/UIDateDetail"
+                android:id="@+id/UICityDetail"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:text="6°"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UITemperatureDetail"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:textSize="50dp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <TextView
+                android:text="temperature min : 6°"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UITemperatureMinDetail"
+                android:layout_marginTop="120dp"
+                android:gravity="left"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="?attr/colorPrimary" />
+
+            <TextView
+                android:text="temperature max : 6°"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UITemperatureMaxDetail"
+                android:layout_marginTop="120dp"
+                android:gravity="right"
+                android:textSize="13dp"
+                android:layout_marginRight="10dp"
+                android:textColor="?android:attr/colorFocusedHighlight" />
+
+            <TextView
+                android:text="humidité : 80 %"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UIHumidityDetail"
+                android:layout_marginTop="160dp" />
+
+            <TextView
+                android:text="vitesse du vent : 100 km/h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UISpeedWindDetail"
+                android:layout_marginTop="180dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@android:color/transparent"
+                android:id="@+id/UIIconDetail"
+                android:layout_marginRight="40dp"
+                android:layout_marginStart="27dp"
+                android:layout_alignBottom="@+id/UITemperatureDetail"
+                android:layout_toEndOf="@+id/UIDateDetail" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

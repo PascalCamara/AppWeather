@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.camara.wheaterapp.MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/day1"
+        android:layout_alignParentStart="true">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/WeatherListView" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day1"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardElevation="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:text="City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/day1"
+            android:id="@+id/UICity"
+            android:textSize="36sp"
+            android:textColor="@android:color/background_light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="6°"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/UITemperature"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp" />
+
+        <TextView
+            android:text="Mercredi 19 janvier 2017"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/UITime"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="12sp"
+            android:textColor="@android:color/background_light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="12dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:color/transparent"
+            android:id="@+id/UIIcon"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp" />
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
